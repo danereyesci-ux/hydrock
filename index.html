@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hydrock Perforaciones — Especialistas en Aguas Subterráneas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Montserrat:wght@300;400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            verde:      '#7BBD2E',
+            'verde-dk': '#6aaa22',
+            azul:       '#1B3F72',
+            'azul-cl':  '#3A8DBF',
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            lato: ['Lato', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .nav-link { @apply text-xs font-bold uppercase tracking-widest text-gray-700 pb-1 border-b-2 border-transparent hover:text-verde hover:border-verde transition-all duration-200; }
+    .nav-link.active { @apply text-verde border-verde; }
+    .btn-verde { @apply inline-block bg-verde hover:bg-verde-dk text-white font-bold text-sm uppercase tracking-wider px-7 py-3 rounded transition-colors duration-200; }
+  </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+
+  <!-- TOP BAR -->
+  <div class="bg-gray-100 border-b border-gray-200 py-1.5">
+    <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-end gap-x-5 gap-y-1">
+      <a href="https://wa.me/56932432340" target="_blank" rel="noopener" class="flex items-center gap-1.5 text-xs font-bold text-gray-700 hover:text-verde no-underline">
+        <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="#7BBD2E"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        +56 9 3243 2340
+      </a>
+      <a href="https://wa.me/56932432341" target="_blank" rel="noopener" class="flex items-center gap-1.5 text-xs font-bold text-gray-700 hover:text-verde no-underline">
+        <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="#7BBD2E"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        +56 9 3243 2341
+      </a>
+      <a href="https://wa.me/56932432347" target="_blank" rel="noopener" class="flex items-center gap-1.5 text-xs font-bold text-gray-700 hover:text-verde no-underline">
+        <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="#7BBD2E"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        +56 9 3243 2347
+      </a>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-[72px]">
+      <a href="#inicio">
+        <img src="assets/logo.png" alt="Hydrock Perforaciones" class="h-12 object-contain">
+      </a>
+      <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-1 bg-transparent border-0 cursor-pointer" aria-label="Menú">
+        <span class="block w-6 h-0.5 bg-gray-700 rounded"></span>
+        <span class="block w-6 h-0.5 bg-gray-700 rounded"></span>
+        <span class="block w-6 h-0.5 bg-gray-700 rounded"></span>
+      </button>
+      <ul id="navLinks" class="hidden md:flex gap-8 list-none m-0 p-0 items-center">
+        <li><a href="#inicio"    class="nav-link active">Inicio</a></li>
+        <li><a href="#conocenos" class="nav-link">Conócenos</a></li>
+        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+        <li><a href="#contacto"  class="nav-link bg-verde text-white px-4 py-2 rounded border-b-0 hover:bg-verde-dk hover:text-white hover:border-transparent">Contacto</a></li>
+      </ul>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-md">
+      <ul class="list-none m-0 p-0">
+        <li><a href="#inicio"    class="block px-6 py-4 text-sm font-bold uppercase tracking-wider text-gray-700 hover:text-verde border-b border-gray-100 no-underline">Inicio</a></li>
+        <li><a href="#conocenos" class="block px-6 py-4 text-sm font-bold uppercase tracking-wider text-gray-700 hover:text-verde border-b border-gray-100 no-underline">Conócenos</a></li>
+        <li><a href="#servicios" class="block px-6 py-4 text-sm font-bold uppercase tracking-wider text-gray-700 hover:text-verde border-b border-gray-100 no-underline">Servicios</a></li>
+        <li><a href="#contacto"  class="block px-6 py-4 text-sm font-bold uppercase tracking-wider text-verde hover:text-verde-dk no-underline">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="inicio" class="relative flex items-end md:items-center overflow-hidden"
+    style="min-height:92vh; background:url('assets/hero-bg.jpg') center center/cover no-repeat, #1B3F72;">
+    <div class="absolute inset-0 pointer-events-none"
+         style="background:linear-gradient(to right,rgba(0,0,0,0.38) 0%,rgba(0,0,0,0.10) 55%,rgba(0,0,0,0) 100%);"></div>
+    <div class="relative w-full max-w-7xl mx-auto px-8 pb-16 pt-24 flex flex-col md:flex-row items-end md:items-center justify-between gap-10">
+      <div class="text-white max-w-lg">
+        <h1 class="leading-tight mb-0" style="font-size:clamp(2rem,4vw,3.2rem);">
+          <span class="font-light text-white">Especialistas en</span><br>
+          <span class="font-black text-white">aguas subterráneas</span>
+        </h1>
+      </div>
+      <div class="flex items-start gap-3 flex-shrink-0 w-full md:w-auto">
+        <div class="bg-white/95 rounded-lg shadow-2xl flex-1 md:w-[420px]" style="padding:32px 36px;">
+          <h2 class="font-bold text-2xl mb-6" style="color:#7BBD2E;">
+            ¡Cotiza <span style="color:#1B3F72;font-weight:900;">con nosotros!</span>
+          </h2>
+          <div class="space-y-3">
+            <input type="text" placeholder="Nombre y Apellido"
+              style="width:100%;border:1px solid #7BBD2E;border-radius:6px;padding:12px 14px;font-family:inherit;font-size:14px;color:#444;outline:none;box-sizing:border-box;"
+              onfocus="this.style.borderColor='#5a9a1f'" onblur="this.style.borderColor='#7BBD2E'"/>
+            <input type="text" placeholder="Comuna"
+              style="width:100%;border:1px solid #7BBD2E;border-radius:6px;padding:12px 14px;font-family:inherit;font-size:14px;color:#444;outline:none;box-sizing:border-box;"
+              onfocus="this.style.borderColor='#5a9a1f'" onblur="this.style.borderColor='#7BBD2E'"/>
+            <input type="email" placeholder="Email"
+              style="width:100%;border:1px solid #7BBD2E;border-radius:6px;padding:12px 14px;font-family:inherit;font-size:14px;color:#444;outline:none;box-sizing:border-box;"
+              onfocus="this.style.borderColor='#5a9a1f'" onblur="this.style.borderColor='#7BBD2E'"/>
+            <input type="tel" placeholder="Teléfono"
+              style="width:100%;border:1px solid #7BBD2E;border-radius:6px;padding:12px 14px;font-family:inherit;font-size:14px;color:#444;outline:none;box-sizing:border-box;"
+              onfocus="this.style.borderColor='#5a9a1f'" onblur="this.style.borderColor='#7BBD2E'"/>
+            <textarea placeholder="Mensaje" rows="4"
+              style="width:100%;border:1px solid #7BBD2E;border-radius:6px;padding:12px 14px;font-family:inherit;font-size:14px;color:#444;outline:none;resize:none;box-sizing:border-box;"
+              onfocus="this.style.borderColor='#5a9a1f'" onblur="this.style.borderColor='#7BBD2E'"></textarea>
+            <button
+              style="background:#7BBD2E;color:white;font-family:inherit;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:0.05em;padding:12px 32px;border-radius:6px;border:none;cursor:pointer;"
+              onmouseover="this.style.background='#6aaa22'" onmouseout="this.style.background='#7BBD2E'">
+              Enviar
+            </button>
+          </div>
+        </div>
+        <a href="https://wa.me/56932432340" target="_blank" rel="noopener" aria-label="WhatsApp"
+           style="flex-shrink:0;width:48px;height:48px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(37,211,102,0.4);margin-top:8px;text-decoration:none;">
+          <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOS CARACTERIZAMOS -->
+  <section id="conocenos" class="pt-16 pb-0 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-center text-azul text-xl md:text-2xl leading-snug mb-14 uppercase tracking-wide">
+        <span class="font-normal">Nos caracterizamos por un fuerte compromiso con el cliente,</span><br>
+        <span class="font-extrabold">Identificándonos con sus intereses</span>
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-16">
+        <div class="flex flex-col items-center text-center">
+          <div class="w-28 h-28 mb-5 flex items-center justify-center">
+            <img src="assets/icono-especialistas.svg" alt="Especialistas" class="w-full h-full object-contain">
+          </div>
+          <p class="text-sm text-gray-700 leading-snug">Somos especialistas en la construcción de pozos de agua subterránea</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <div class="w-28 h-28 mb-5 flex items-center justify-center">
+            <img src="assets/icono-maquinaria.svg" alt="Maquinaria" class="w-full h-full object-contain">
+          </div>
+          <p class="text-sm text-gray-700 leading-snug">Estamos calificados para operar maquinarias de última generación</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <div class="w-28 h-28 mb-5 flex items-center justify-center">
+            <img src="assets/icono-experiencia.svg" alt="Experiencia" class="w-full h-full object-contain">
+          </div>
+          <p class="text-sm text-gray-700 leading-snug">Contamos con más de 25 años de experiencia en el rubro</p>
+        </div>
+      </div>
+      <div class="text-center pb-0">
+        <p class="text-sm font-bold text-gray-700 uppercase tracking-widest mb-4">Certificados como operadores de sondaje por</p>
+        <img src="assets/asimet.png" alt="ASIMET Asesorías" class="mx-auto object-contain" style="height:200px;max-width:420px;">
+      </div>
+    </div>
+    <!-- WATER DIVIDER: PNG 1136x313 con fondo transparente -->
+    <div style="width:100%;line-height:0;">
+      <img src="assets/water-divider.png" alt="Agua" style="width:100%;display:block;">
+    </div>
+  </section>
+
+  <!-- NUESTROS SERVICIOS -->
+  <section id="servicios" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-center font-extrabold text-2xl text-azul uppercase tracking-widest mb-14">Nuestros&nbsp;Servicios</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-14">
+
+        <div class="flex flex-col items-center text-center">
+          <img src="assets/mockup-construccion.svg" alt="Construcción de pozos" class="w-28 h-28 object-contain mx-auto mb-5">
+          <h3 class="font-extrabold text-azul text-xl mb-3">Construcción de pozos profundos</h3>
+          <p class="text-sm text-gray-600 leading-relaxed mb-5 text-justify">
+            Construimos pozos de agua subterránea destinados a diversos rubros, entre estos: minero, agrícola, domiciliario, etc. Utilizamos un sistema de rotopercusión con entubación simultánea, que nos permite perforar el terreno desde 6 hasta 12 pulgadas, alcanzando hasta 200 metros de profundidad.
+          </p>
+          <a href="#contacto" class="bg-verde hover:bg-verde-dk text-white font-bold text-sm uppercase tracking-wider px-8 py-2.5 rounded-md transition-colors no-underline">Cotiza aquí</a>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img src="assets/mockup-limpieza.svg" alt="Limpieza de pozos" class="w-28 h-28 object-contain mx-auto mb-5">
+          <h3 class="font-extrabold text-azul text-xl mb-3">Limpieza y mantención de pozos</h3>
+          <p class="text-sm text-gray-600 leading-relaxed mb-5 text-justify">
+            Es necesario realizar limpieza y mantención de un pozo cada cierto tiempo, con el fin de mejorar el rendimiento y la vida útil. Te ofrecemos un servicio completo en donde determinamos el potencial de explotación del pozo con todo el equipamiento necesario para recuperar su caudal de forma efectiva y segura.
+          </p>
+          <a href="#contacto" class="bg-verde hover:bg-verde-dk text-white font-bold text-sm uppercase tracking-wider px-8 py-2.5 rounded-md transition-colors no-underline">Cotiza aquí</a>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img src="assets/mockup-bombeo.svg" alt="Pruebas de bombeo" class="w-28 h-28 object-contain mx-auto mb-5">
+          <h3 class="font-extrabold text-azul text-xl mb-3">Pruebas de bombeo</h3>
+          <p class="text-sm text-gray-600 leading-relaxed mb-5 text-justify">
+            Procedimiento que permite reunir información sobre la permeabilidad local de un acuífero y determinar si los recursos hídricos son aptos para el proyecto. Realizamos pruebas de bombeo según las exigencias de cada cliente, ya sea para la inscripción del pozo (norma DGA) o para evaluar su caudal, en el caso de que sea necesario.
+          </p>
+          <a href="#contacto" class="bg-verde hover:bg-verde-dk text-white font-bold text-sm uppercase tracking-wider px-8 py-2.5 rounded-md transition-colors no-underline">Cotiza aquí</a>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img src="assets/mockup-hidraulica.svg" alt="Habilitación hidráulica" class="w-28 h-28 object-contain mx-auto mb-5">
+          <h3 class="font-extrabold text-azul text-xl mb-3">Habilitación de pozos y llave en mano (Hidráulica)</h3>
+          <p class="text-sm text-gray-600 leading-relaxed mb-5 text-justify">
+            Terminada la construcción del pozo, nos adecuamos a los requerimientos del cliente, ofreciendo variedad de opciones en servicios relacionados al área hidráulica. Esto servirá para impulsar el agua, independiente de la cantidad y sin importar el caudal, ni hasta donde quieras llegar con ella.
+          </p>
+          <a href="#contacto" class="bg-verde hover:bg-verde-dk text-white font-bold text-sm uppercase tracking-wider px-8 py-2.5 rounded-md transition-colors no-underline">Cotiza aquí</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+
+<section id="contacto" style="position:relative; overflow:hidden; min-height:900px; background:#ffffff;">
+  
+  <img src="assets/water-contact.png" alt=""
+    style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; object-position: center top; z-index:0;">
+  
+  <div class="px-6 pb-24" style="position:relative; z-index:2; padding-top: 320px;">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
+      
+      <div class="flex-1 text-white flex flex-col justify-center" style="min-height: 100%;">
+  
+  <div class="mb-0" style="width: 100%; max-width: 280px; margin: 0 auto md:0;">
+    <img src="assets/icono-pulgar.svg" alt="Compromiso" class="w-full h-auto object-contain">
+  </div>
+  
+  <h2 class="leading-snug" style="font-size:clamp(1.8rem,3vw,2.6rem); font-weight: 700; margin-top: -30px;">
+    Nos comprometemos<br>con el cliente a la hora<br>de construir su pozo
+  </h2>
+</div>
+      
+      <div class="w-full max-w-md flex-shrink-0" style="background:#ffffff; border-radius:8px; padding:32px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+        <h3 class="font-bold text-2xl mb-5" style="color:#7BBD2E;">¡Escríbenos!</h3>
+        <div class="space-y-3">
+          <input type="text" placeholder="Nombre y Apellido"
+            style="width:100%; background:#ffffff; border:1.5px solid #7BBD2E; border-radius:6px; padding:11px 14px; color:#444; font-family:inherit; font-size:13px; outline:none; box-sizing:border-box;"
+            onfocus="this.style.borderColor='#5a9a1f'" onblur="this.style.borderColor='#7BBD2E'"/>
+          <input type="text" placeholder="Comuna"
+            style="width:100%; background:#ffffff; border:1.5px solid #7BBD2E; border-radius:6px; padding:11px 14px; color:#444; font-family:inherit; font-size:13px; outline:none; box-sizing:border-box;"
+            onfocus="this.style.borderColor='#5a9a1f'" onblur="this.style.borderColor='#7BBD2E'"/>
+          <input type="email" placeholder="Email"
+            style="width:100%; background:#ffffff; border:1.5px solid #7BBD2E; border-radius:6px; padding:11px 14px; color:#444; font-family:inherit; font-size:13px; outline:none; box-sizing:border-box;"
+            onfocus="this.style.borderColor='#5a9a1f'" onblur="this.style.borderColor='#7BBD2E'"/>
+          <input type="tel" placeholder="Teléfono"
+            style="width:100%; background:#ffffff; border:1.5px solid #7BBD2E; border-radius:6px; padding:11px 14px; color:#444; font-family:inherit; font-size:13px; outline:none; box-sizing:border-box;"
+            onfocus="this.style.borderColor='#5a9a1f'" onblur="this.style.borderColor='#7BBD2E'"/>
+          <textarea placeholder="Mensaje" rows="5"
+            style="width:100%; background:#ffffff; border:1.5px solid #7BBD2E; border-radius:6px; padding:11px 14px; color:#444; font-family:inherit; font-size:13px; outline:none; resize:none; box-sizing:border-box;"
+            onfocus="this.style.borderColor='#5a9a1f'" onblur="this.style.borderColor='#7BBD2E'"></textarea>
+          <div>
+            <button style="background:#7BBD2E; color:white; font-family:inherit; font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:0.05em; padding:11px 32px; border-radius:6px; border:none; cursor:pointer;"
+              onmouseover="this.style.background='#6aaa22'" onmouseout="this.style.background='#7BBD2E'">Enviar</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#3a3a3a] text-gray-300 pt-10 pb-6">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex justify-center mb-8">
+        <ul class="flex flex-wrap gap-8 list-none p-0 m-0">
+          <li><a href="#inicio"    class="text-xs font-bold uppercase tracking-widest text-gray-300 hover:text-verde no-underline transition-colors">Inicio</a></li>
+          <li><a href="#conocenos" class="text-xs font-bold uppercase tracking-widest text-gray-300 hover:text-verde no-underline transition-colors">Conócenos</a></li>
+          <li><a href="#servicios" class="text-xs font-bold uppercase tracking-widest text-gray-300 hover:text-verde no-underline transition-colors">Servicios</a></li>
+          <li><a href="#contacto"  class="text-xs font-bold uppercase tracking-widest text-gray-300 hover:text-verde no-underline transition-colors">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col md:flex-row items-start justify-between gap-8">
+        <div class="flex-shrink-0">
+          <img src="assets/logo-white.png" alt="Hydrock Perforaciones" class="h-20 object-contain">
+        </div>
+        <div class="flex flex-col items-start md:items-end gap-3 text-xs text-gray-300">
+          <div class="flex items-start gap-2">
+            <svg class="w-4 h-4 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="#7BBD2E"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <div class="leading-5">
+              <a href="https://wa.me/56932432340" class="block hover:text-verde no-underline transition-colors">+56 9 3243 2340</a>
+              <a href="https://wa.me/56932432341" class="block hover:text-verde no-underline transition-colors">+56 9 3243 2341</a>
+              <a href="https://wa.me/56932432347" class="block hover:text-verde no-underline transition-colors">+56 9 3243 2347</a>
+            </div>
+          </div>
+          <p class="text-gray-400">Calle falsa #123, Santiago, Chile</p>
+          <div class="flex gap-2 mt-1">
+            <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"
+               class="w-8 h-8 rounded-full border border-gray-500 hover:border-verde flex items-center justify-center transition-colors">
+              <svg class="w-3.5 h-3.5 fill-gray-300" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/hydrock_perforaciones" target="_blank" rel="noopener" aria-label="Instagram"
+               class="w-8 h-8 rounded-full border border-gray-500 hover:border-verde flex items-center justify-center transition-colors">
+              <svg class="w-3.5 h-3.5 fill-gray-300" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Facebook"
+               class="w-8 h-8 rounded-full border border-gray-500 hover:border-verde flex items-center justify-center transition-colors">
+              <svg class="w-3.5 h-3.5 fill-gray-300" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-600 mt-8 pt-5 text-center text-xs text-gray-500 leading-5">
+        <p>Hydrock Todos los derechos reservados.</p>
+        <p>Desarrollado por <a href="#" class="hover:text-verde transition-colors no-underline">Tilde</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a href="https://wa.me/56932432340" target="_blank" rel="noopener" aria-label="WhatsApp"
+     class="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] hover:scale-110 rounded-full flex items-center justify-center shadow-lg transition-transform z-50">
+    <svg class="w-7 h-7 fill-white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    const ham = document.getElementById('hamburger');
+    const mob = document.getElementById('mobileMenu');
+    if (ham && mob) {
+      ham.addEventListener('click', () => mob.classList.toggle('hidden'));
+      mob.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mob.classList.add('hidden')));
+    }
+    const sections = document.querySelectorAll('section[id]');
+    const links = document.querySelectorAll('ul#navLinks .nav-link');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.id; });
+      links.forEach(l => {
+        l.classList.remove('active');
+        if (l.getAttribute('href') === '#' + cur) l.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
